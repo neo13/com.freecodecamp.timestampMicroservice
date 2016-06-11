@@ -1,0 +1,1 @@
+module.exports={entry:'./src/app.js',output:{filename:'bundle.js',path:'./built'},plugins:[new webpack.optimize.UglifyJsPlugin({compress:{warnings: false},output:{comments: false,semicolons:true}})],module:{loaders: [{test: /.js$/,loader: 'babel-loader'},{test: /.scss$/,loaders: ['style', 'css', 'sass']}]}};

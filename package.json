@@ -1,0 +1,38 @@
+{
+    "version": "0.0.1-beta",
+    "authors": [
+        "Neo13<a.derakhshan.iut@gmail.com>"
+    ],
+    "license": "MIT",
+    "scripts": {
+        "make": "webpack --config ./config/development.webpack.js --profile --progress --colors",
+        "make:watch": "webpack --config ./config/development.webpack.js --profile --progress --colors --watch",
+        "make:server": "webpack-dev-server --config ./config/development.webpack.js --profile --progress --colors",
+        "make:production": "webpack --config ./config/production.webpack.js --profile --progress --colors",
+        "test": "mocha --compilers js:babel-register"
+    },
+    "babel": {
+        "presets": [
+            "es2015"
+        ]
+    },
+    "dependencies": {
+        "webpack": "*",
+        "chai": "*",
+        "mocha": "*",
+        "babel-polyfill": "*",
+        "babel-preset-es2015": "*",
+        "babel-core": "*",
+        "babel-loader": "*",
+        "sass-loader": "*",
+        "node-sass": "*"
+    },
+    "name": "com.freecodecamp.timestampMicroservice",
+    "homepage": "https://github.com/neo13/com.freecodecamp.timestampMicroservice",
+    "repository": {
+        "type": "https",
+        "url": "https://github.com/neo13/com.freecodecamp.timestampMicroservice.git"
+    },
+    "description": "A Micro api service which provides with timestamps",
+    "main": "./built/bundle.js"
+}
